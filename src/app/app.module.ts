@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
-
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AppComponent } from './core/app.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -13,9 +12,12 @@ import { AppComponent } from './core/app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule
   ],
+
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
