@@ -1,5 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+button.btn.btn-primary {
+    background-color: rgb(255, 255, 255);
+    padding: 1px 12px;
+    color: #8cddcd;
+    font-size: 12px;
+    border-radius: 3px;
+    font-weight: 700;
+    border: 1px solid;
+    box-shadow: 1px 1px 1px 1px;
+    height: 25px;
+}
+button.btn.btn-primary:hover {
+    background: #8cddcd;
+    color:#fff;
+}
+
 .main-layout {
-    width: 1140px;
-    margin: auto;
+    position: relative;
+    display: block;
+    padding: 25px;
+    width: 83%;
+    margin-left: auto;
+
+}
+body {
+    background: #e9e9e9;
+}
+@media screen and (max-width: 1245px) {
+    .main-layout {
+        width: 80%;
+    }
 }
