@@ -12,6 +12,9 @@ button.btn.btn-primary {
     height: 25px;
 }
 button.btn.btn-primary:hover {
+    a{
+        color: #fff;
+    }
     background: #8cddcd;
     color:#fff;
 }
@@ -20,7 +23,6 @@ button.btn.btn-primary:hover {
     position: relative;
     display: block;
     padding: 25px;
-    width: 83%;
     margin-left: auto;
 
 }
