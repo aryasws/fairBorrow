@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-nav',
@@ -7,10 +8,13 @@ import { Component } from '@angular/core';
 })
 export class TopNavComponent {
 
-  constructor(){}
+  constructor(private routers:Router){}
 
   ngOnInit(): void {
     
     
+  }
+  router(){
+ this.routers.navigateByUrl("")
   }
 }
